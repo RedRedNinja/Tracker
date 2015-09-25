@@ -7,6 +7,7 @@ if len(sys.argv) != 3:
 
 NOTE: You may have to enclose your username in quotes if it 
 contains spaces or other non-alphanumeric characters"""
+$ python dest_cf.py PSN "redredninja"
     sys.exit(1)
 
 if sys.argv[1] == 'PSN':
