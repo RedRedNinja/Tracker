@@ -3,20 +3,20 @@
 import urllib, json, sys
 
 if len(sys.argv) != 3:
-    print """Usage: %s (XBL|PSN) (Username)
+    print """Usage: %s (PSN) (redredninja)
 
 NOTE: You may have to enclose your username in quotes if it 
 contains spaces or other non-alphanumeric characters"""
     sys.exit(1)
 
-if sys.argv[1] == 'PSN':
+if sys.argv[1] == 'XBL':
     system = 1
 else:
     system = 2
 
 playerName = sys.argv[2]
 
-url3 = "http://www.bungie.net/Platform/Destiny/SearchDestinyPlayer/%s/%s/" % (PSN, redredninja)
+url3 = "http://www.bungie.net/Platform/Destiny/SearchDestinyPlayer/%s/%s/" % (system, playerName)
 
 response3 = urllib.urlopen(url3)
 
