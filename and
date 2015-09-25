@@ -3,14 +3,13 @@
 import urllib, json, sys
 
 if len(sys.argv) != 3:
-    print """Usage: %s (PSN) (redredninja)
+    print """Usage: %s (XBL|PSN) (Username)
 
 NOTE: You may have to enclose your username in quotes if it 
 contains spaces or other non-alphanumeric characters"""
-$ python dest_cf.py PSN "redredninja"
     sys.exit(1)
 
-if sys.argv[1] == 'PSN':
+if sys.argv[1] == 'XBL':
     system = 1
 else:
     system = 2
